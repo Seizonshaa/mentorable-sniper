@@ -1,0 +1,59 @@
+{
+  "name": "mentorable-sniper-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ethers": "^6.9.0",
+    "node-telegram-bot-api": "^0.64.0"
+  }
+}
+```
+
+4. Click **"Commit new file"** (green button at bottom)
+
+**File 2: index.js**
+1. Click **"Add file" → "Create new file"** again
+2. Name it: `index.js`
+3. Go back to the artifact I created called "index.js (Railway Version)" 
+4. Copy ALL that code
+5. Paste it in GitHub
+6. Click **"Commit new file"**
+
+---
+
+### **Step 4: Connect GitHub to Railway**
+
+1. Go back to Railway
+2. Click **"Deploy from GitHub Repository"**
+3. It will ask you to **"Connect GitHub"** - click it
+4. GitHub will ask "Allow Railway?" - click **"Authorize"**
+5. Select your `mentorable-sniper` repository
+6. Railway will start building! 🎉
+
+---
+
+### **Step 5: Add Your Secret Keys**
+
+After Railway starts building:
+
+1. Click on your service (it should appear)
+2. Click **"Variables"** tab
+3. Click **"+ New Variable"** for each of these:
+```
+Name: TELEGRAM_TOKEN
+Value: 8114889818:AAEGC04CeegYt2Fe7IXThktvv1RveFPZJlg
+
+Name: ADMIN_ID  
+Value: 7509078108
+
+Name: PRIVATE_KEY
+Value: 42256c699a88d3152b0b665ea6157f937c2e745712291120033d5d94963d7ada
+
+Name: CONTRACT_ADDRESS
+Value: 0x329740b817165e7bf08f8d75ca560f12299ac62
+
+Name: RPC_URL
+Value: https://mainnet.base.org
